@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker(Ass-9)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-query.css">
+</head>
+<body>
+<!-- <div class="w-75 m-auto">
+    <label for="fn" >Frist Name</label>
+    <input type="text" class="form-control my-2" id="fn">
+    <label for="ln">Last Name</label>
+    <input type="text" class="form-control my-2" id="ln">
+    <button onclick="sayHello()" class="btn btn-info mt-2">Add</button>
+    <button onclick="getClear()" class="btn btn-danger mt-2" id="cl">Clear</button>
+</div> -->
+              <!-- ----------------------------------------------------------------------------------------------- -->
+              <!-- message  if not valid field -->
+              <div class="box" id="box" onclick="hideBox()">
+                <img src="./img/1.png" alt="">
+                <p>Site Name or Url is not valid, Please follow the rules below :</p>
+
+                 <p> 1- Site name must contain at least 3 characters</p>
+                  <p>2- Site URL must be a valid one</p>
+              </div>
+              
+             <!-- -----------------------------------------------------------  -->
+              
+              <div class="w-75 py-4 m-auto">
+                <h1>Bookmarker</h1> 
+                <div class="bookmark-body my-5"> 
+                  <div class=" d-flex justify-content-center align-items-center my-3  media-size">
+                    <i class="fa-solid fa-bookmark fa-xl me-3 text-success"></i>
+                    <h2>Bookmark your favorite sites</h2>
+                    <i class=" txt fa-solid fa-bookmark fa-xl ms-3 "></i>
+                  </div>
+                  <div class="input-lab d-flex flex-column justify-content-center">
+                  <label for="bn"><i class="fa-solid fa-book icon-dis"></i></label>
+                  <input id="sn" type="text" placeholder="Bookmark Name" class="form-control my-2 mb-4">
+                  <label for="wrl"><i class="fa-solid fa-link icon-dis2"></i></label>
+                  <input id="wrl" type="text" placeholder="Website Url" class="form-control my-2">
+                  <button onclick="getCondition()" class="btn btn1 btn-danger" id="changeStuts">Submit</button>
+                  <input id="search" onkeyup="searchElement(this.value)" type="text" placeholder="Search" class="form-control my-3">
+                </div>
+              </div>
+              <table class="table">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+         
+              </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
